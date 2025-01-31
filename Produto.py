@@ -14,6 +14,7 @@ class Produto:
         self.quantidade += self.quantidade
         print(self.quantidade)
     
+    #VerificarDisponibilidade
     def VerificarDisponibilidade(self):
         if(self.quantidade < 1):
             print("Produto em falta")

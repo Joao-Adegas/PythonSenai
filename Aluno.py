@@ -4,11 +4,13 @@
 
 class Aluno():
 
+    #Construtor da classe Aluno
     def __init__(self,Nome,Matricula):
         self.Nome = Nome
         self.matricula = Matricula
         self.Notas = []
 
+    #CalcularMedia
     def CalcularMedia(self):
         for i in range(0,5):
             notas = float(input(f"Digite a {i+1} nota "))
@@ -18,6 +20,7 @@ class Aluno():
         self.media = total/len(self.Notas)
         print(self.media)
 
+    #Situação
     def Situacao(self):
         if(self.media >=6):
             print("Aprovado")

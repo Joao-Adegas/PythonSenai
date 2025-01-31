@@ -10,24 +10,19 @@ class ContaBancaria:
         self.saldo = saldo
         self.NumeroDaconta = NumeroDaConta
 
+    #Deposito
     def Deposito(self,valor,ContaDestinatariaNumero):
         self.saldo -= valor
         print(f"O valor {valor} foi depositado na conta de {self.NomeDoTitular} para {ContaDestinatariaNumero}")
         
+    #Saque
     def Saque(self,valor):
         self.saldo += valor
         print(f"O valor {valor} foi sacado. seu saldo agora e {self.saldo}")
 
 
-        
 
-conta1 = ContaBancaria("joao",1,9121281298)
 
-conta2 = ContaBancaria("gabi",10000,129128728)
-
-conta1.Deposito(120,129128728)
-
-conta2.Saque(2)
 
 
 
