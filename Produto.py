@@ -1,31 +1,27 @@
 # Implemente uma classe chamada “Produto” que possua atributos para armazenar o 
-# nome, o preço e a quantidade em estoque. Adicione métodos para calcular o valor 
+# nome, o preço e a quantityProduct em estoque. Adicione métodos para calcular o valor 
 # total em estoque e verificar se o produto está disponível.
 
 class Produto:
 
-    def __init__(self,nome,preco,quantidade):
-        self.nome = nome
-        self.preco = preco
-        self.quantidade = quantidade
+    def __init__(self,nameProduct,priceProduct,quantityProduct):
+        self.nameProduct = nameProduct
+        self.priceProduct = priceProduct
+        self.quantityProduct = quantityProduct
 
-    #calcular valor total em estoque 
-    def CalcularValorEstoque(self):
-        self.quantidade += self.quantidade
-        print(self.quantidade)
+    # calculateValue - calcular valor total em estoque 
+    def calculateValue(self):
+        self.quantityProduct += self.quantityProduct
+        print(self.quantityProduct)
     
-    #VerificarDisponibilidade
-    def VerificarDisponibilidade(self):
-        if(self.quantidade < 1):
+    #checkAvailable - verificar disponibilidade
+    def checkAvailable(self):
+        if(self.quantityProduct < 1):
             print("Produto em falta")
         else:
-            print(f"Produto disponivel {self.quantidade} em estoque")
+            print(f"Produto disponivel {self.quantityProduct} em estoque")
+        
+    def __str__(self):
+        return f"Nome: {self.nameProduct}\nPreco: {self.priceProduct}\nQuantidade: {self.quantityProduct}"
 
 
-produto1 = Produto("banana",2.99,11)
-
-
-produto1.CalcularValorEstoque()
-produto1.VerificarDisponibilidade()
-
-    
