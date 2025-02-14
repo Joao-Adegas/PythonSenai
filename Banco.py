@@ -3,6 +3,7 @@
 # realizar operações como saques, depósitos e transferências.
 import random
 from ContaBancaria import ContaBancaria
+
 class Banco:
 
     #Construtor 
@@ -16,7 +17,7 @@ class Banco:
         
     #Metodo para abrir conta
     def open_accout(self,nameHolder,balance,numberAccout):
-        print("\n\033[32m================== Accout create ===================\033[m")
+        print("\n\033[32m================== Account create ===================\033[m")
         self.accout = ContaBancaria(nameHolder,numberAccout,balance)
         self.accouts.append(self.accout) 
         print(f"Name: \033[32m{nameHolder}\033[m\nBalance: \033[32m{balance}\033[m\nNumber accout: \033[32m{numberAccout}\033[m")
@@ -57,9 +58,9 @@ class Banco:
 
 banco1 = Banco()
 banco1.open_accout("adegas",100,1)
-banco1.open_accout("julha",100,2)
+banco1.open_accout("jubscreuda",100,2)
 banco1.client_register("adegas")
-banco1.client_register("julha")
+banco1.client_register("jubscreuda")
 banco1.transfe(12,1,2)
 
 

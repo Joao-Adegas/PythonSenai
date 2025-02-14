@@ -20,5 +20,5 @@ class Circulo:
         print(f"O perimetro do Circuloe {perimetro}")
 
 
-
-    
+curculo = Circulo(12)
+curculo.AreaCirculo()
